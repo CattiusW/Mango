@@ -1,0 +1,31 @@
+body {
+        animation: fade 30s infinite;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: black; 
+    }
+
+h1 {
+        font-size: 300px;
+        font-family: 'Lobster', cursive;
+        margin: 20px 0;
+        color: black; }
+@keyframes fade {
+        0%{background: linear-gradient(-30deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        10%{background: linear-gradient(-10deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        20%{background: linear-gradient(-20deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        30%{background: linear-gradient(-0deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        40%{background: linear-gradient(-40deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        50%{background: linear-gradient(-50deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        60%{background: linear-gradient(-80deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        70%{background: linear-gradient(-70deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        80%{background: linear-gradient(-60deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        90%{background: linear-gradient(-90deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        100%{background: linear-gradient(-100deg, #ef02a4, #e7a03c, #eaff00, #ffbf00);}
+        }
