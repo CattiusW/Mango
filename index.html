@@ -19,25 +19,36 @@
             <h3><a href="https://github.com/mango-pi-x">Follow Me on GitHub</a></h3>
         </footer>
     </div>
-    <script>
-        let y=document.cookie;
-        if(y=='x'){var myWindow = window.open("", "_self");
-            myWindow.document.write("<h1>No one Likes YOU!</h1>");}
+</body>
+   <script>
+    let y = document.cookie
+    
+        window.onload = function() {
+            if (y =='deny') {
+                window.location.href = "https://www.google.com";
+            }
+        }
+
+        
         const image = document.getElementById("image");
+
+        
         image.addEventListener("click", firstClick);
+
         function firstClick() {
-            alert('DO NOT POKE ME')
+            alert('DO NOT POKE ME');
             image.removeEventListener("click", firstClick);
             image.addEventListener("click", secondClick);
         }
-        function secondClick() {
-            alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK HERE!')
-            document.cookie = "x; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT"
-            var myWindow = window.open("", "_self");
-            myWindow.document.write("<h1>No one Likes YOU!</h1>");
-            }
-            
 
+        function secondClick() {
+            alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK 	HERE!');
+            // Blacklist the user by setting a cookie
+            document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
+            let y = document.cookie
+            
+            // Redirect to another page
+            window.location.href = "https://www.google.com";
+        }
     </script>
-</body>
 </html>
