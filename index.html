@@ -20,12 +20,9 @@
         </footer>
     </div>
     <script>
-    let x = document.cookie
-    	if (x == 'x') {
-  		var myWindow = window.open("", "_self");
-            myWindow.document.write("<h1>No one Likes YOU!</h1>");
-            }
-
+        let y=document.cookie;
+        if(y=='x'){var myWindow = window.open("", "_self");
+            myWindow.document.write("<h1>No one Likes YOU!</h1>");}
         const image = document.getElementById("image");
         image.addEventListener("click", firstClick);
         function firstClick() {
