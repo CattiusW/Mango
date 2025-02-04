@@ -1,4 +1,5 @@
 body {
+        cursor: url('1234.png'), auto;
         animation: fade 30s infinite;
         font-family: 'Roboto', sans-serif;
         margin: 0;
@@ -12,6 +13,7 @@ body {
     }
     
     .container {
+      
         animation: fade 30s infinite;
         text-align: center;
         max-width: 800px;
@@ -43,11 +45,13 @@ body {
         transition: color 0.3s ease;
     }
     a:hover {
+        ursor: url('thumb.png'), auto;
         background: -webkit-linear-gradient(#d93ce7,#00ffae);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     img {
+        ursor: url('cursored.png'), auto;
         border-radius: 50%;
         margin: 20px 0;
         width: 150px;
@@ -57,6 +61,7 @@ body {
         transition: transform 0.3s ease;
     }
     img:hover {
+        ursor: url('curosred.png'), auto;
         transform: scale(1.1);
     }
     footer {
