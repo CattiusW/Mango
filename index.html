@@ -1,56 +1,83 @@
 <!DOCTYPE html>
-<!--CODE COPYRIGHT CASSIUS W 2025-->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangoPi</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
-</head>
-<body>
-    <div class="container">
-        <h1>Cassius W.</h1>
-        <img id="image" src="https://i.postimg.cc/PNV2ySTG/cat.gif" alt="Cat Gif Image.">
-        <p>About Me.</p>
-        <footer>
-            <h3><a href="mailto:admin@mangopi.xyz">Email Me</a></h3>
-            <h3><a href="https://github.com/mango-pi-x">Follow Me on GitHub</a></h3>
-        </footer>
-    </div>
-</body>
-   <script>
-    let y = document.cookie
-    
-        window.onload = function() {
-            if (y =='deny') {
-                window.location.href = "https://www.google.com";
-            }
-        }
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>2048</title>
+        <link href="style/main.css" rel="stylesheet" type="text/css" />
+        <link href="style/ai.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+        <meta property="og:title" content="2048 game" />
+        <meta property="og:site_name" content="2048 game" />
+        <meta property="og:description" content="Join the numbers and get to the 2048 tile! Careful: this game is extremely addictive!" />
+        <meta property="og:image" content="meta/og_image.png" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1 class="title">2048</h1>
+                <div class="score-container">0</div>
+            </div>
+            <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
+            <div class="controls">
+                <div id="hint-button-container">
+                    <button id="hint-button" class="ai-button">Get Hint</button>
+                </div>
+                <div id="feedback-container"></div>
+                <div id="run-button-container">
+                    <button id="run-button" class="ai-button">Auto-run</button>
+                </div>
+            </div>
+            <div class="game-container">
+                <div class="game-message">
+                    <p></p>
+                    <div class="lower">
+                        <a class="retry-button">Try again</a>
+                        <div class="score-sharing"></div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                    <div class="grid-row">
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                        <div class="grid-cell"></div>
+                    </div>
+                </div>
+                <div class="tile-container"></div>
+            </div>
+            <p class="game-explanation"><strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong></p>
+        </div>
 
-        
-        const image = document.getElementById("image");
-
-        
-        image.addEventListener("click", firstClick);
-
-        function firstClick() {
-            alert('DO NOT POKE ME');
-            image.removeEventListener("click", firstClick);
-            image.addEventListener("click", secondClick);
-        }
-
-        function secondClick() {
-            alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK HERE!');
-            // Blacklist the user by setting a cookie
-            document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
-            let y = document.cookie
-            window.location.href = "https://www.google.com/search?client=opera-gx&q=why+does+no+one+like+me&sourceid=opera&ie=UTF-8&oe=UTF-8";
-            window.location.href = "https://www.google.com/search?client=opera-gx&q=why+does+no+one+like+me&sourceid=opera&ie=UTF-8&oe=UTF-8";
-            window.location.href = "https://www.google.com/search?client=opera-gx&q=why+does+no+one+like+me&sourceid=opera&ie=UTF-8&oe=UTF-8";
-            // Redirect to another page
-            window.location.href = "https://www.google.com/search?client=opera-gx&q=why+does+no+one+like+me&sourceid=opera&ie=UTF-8&oe=UTF-8";
-        }
-    </script>
+        <script src="js/animframe_polyfill.js"></script>
+        <script src="js/hammer.min.js"></script>
+        <script src="js/keyboard_input_manager.js"></script>
+        <script src="js/html_actuator.js"></script>
+        <script src="js/grid.js"></script>
+        <script src="js/tile.js"></script>
+        <script src="js/ai.js"></script>
+        <script src="js/game_manager.js"></script>
+        <script src="js/application.js"></script>
+        <script type="application/javascript" src="/js/main.js"></script>
+    </body>
 </html>
