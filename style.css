@@ -1,5 +1,5 @@
 body {
-        cursor: url('1234.png'), auto;
+        cursor: url('cursors/blackpaw.png'), auto;
         animation: fade 30s infinite;
         font-family: 'Roboto', sans-serif;
         margin: 0;
@@ -40,19 +40,19 @@ body {
         font-size: 35px;
     }
     a {
-        cursor: url('thumb.png'), auto;
+        cursor: url('cursors/thumb.png'), auto;
         color: black;
         text-decoration: none;
         transition: color 0.3s ease;
     }
     a:hover {
-        cursor: url('thumb.png'), auto;
+        cursor: url('cursors/thumb.png'), auto;
         background: -webkit-linear-gradient(#d93ce7,#00ffae);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     img {
-        cursor: url('cursored.png'), auto;
+        cursor: url('cursors/orangepaw.png'), auto;
         border-radius: 50%;
         margin: 20px 0;
         width: 150px;
