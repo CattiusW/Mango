@@ -1,2 +1,2 @@
 # Mango
- <a href='mangopi.xyz'>My website.<a>
+ <a href='http://mangopi.xyz'>My website.<a>
