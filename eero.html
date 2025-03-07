@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
+    <meta charset="UTF-8" />
+    <title>Overthrow Eero</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+*{
+    font-family: "Big Shoulders Stencil", sans-serif;
+    background: #f5ff6b;
+    text-align: center;
+    color:black
+}
+p{
+    font-size: 50px;
+}
+.hidden{display: none;}
+.shown{display:block}
+h1{font-size: 100px;}
+.centered-text {
+            text-align: center;
+            /* For vertical centering */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust height as needed */
+        }
+
+</style>
+
+<body>
+    <h1 class="hide-this centered-text">Overthrow eero</h1>
+    <p class="show hidden">everyone deserves freedom of information and acsess to the internet. the internet serves as a global platform where vast amounts of data are readily available, enabling individuals to stay informed about current events, scientific advancements, and diverse perspectives from around the world. this access empowers citizens to make well-informed decisions, fosters transparency, and holds governments and institutions accountable.</p>
+    
+    
+</body>
+<script>
+     var elementToHide = document.querySelector('.hide-this');
+ function hideElement() {
+            // Get the element to hide
+            var elementToHide = document.querySelector('.hide-this');
+            var elementToShow = document.querySelector('.show');
+            // Hide the element by adding the 'hidden' class
+            elementToHide.classList.add('hidden');
+            elementToHide.classList.remove('centered-text');
+            elementToShow.classList.add('shown');
+            elementToShow.classList.remove('hidden');
+            elementToShow.classList.add('centered-text');
+        }
+elementToHide.addEventListener('click', hideElement);
+</script>
+</html>
