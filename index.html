@@ -2,55 +2,44 @@
 <!--CODE COPYRIGHT CASSIUS W 2025-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MangoPi</title>
-    <link rel="stylesheet" href="styles/INDEXstyle.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MangoPi</title>
+<link rel="stylesheet" href="styles/INDEXstyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
 </head>
 <body>
-    <p style='display:none'>Cassius Wignarajah<br>Mango wignarajah<br>Perdy Wignarajah<br> Cats<br>web developer<br>mango-pi-x</p>
-    <div class="container">
-        <h1>MangoPi</h1>
-        <img id="image" src="https://i.postimg.cc/PNV2ySTG/cat.gif" alt="Cat Gif Image.">
-        <p>Stuff I Find Intresting</p>
-        <footer>
-            <h3><a href="exploits">Exploits</a></h3>
-            <h3><a href="randomcatpic">Random Cat Pic</a></h3>
-            
-        </footer>
-        <p>About Me.</p>
-        <footer>
-            <h3>I am intrested in physical computing and the downfall of evil things like amazon eero and senso spyware.</h3>
-            <h3><a href="mailto:admin@mangopi.xyz">Email Me</a></h3>
-            <h3><a href="https://github.com/mango-pi-x">Follow Me on GitHub</a></h3>
-        </footer>
-    </div>
+<div class="container">
+<h1>MangoPi</h1>
+<img id="image" src="https://i.postimg.cc/PNV2ySTG/cat.gif" alt="Cat Gif Image.">
+<h3>Stuff:<br><a onclick='prompt("copy and paste the password:", "supersecretpassword");'style='text-align:left' href="https://code.mangopi.xyz">Code </a><a style='text-align:right' href="eero">Eero</a><a style='text-align:right' href="https://clock.mangopi.xyz"> Clock</a></h3>
+
+<footer>
+<h3>Links:<br><a style='text-align:left' href="mailto:admin@mangopi.xyz">Email </a><a style='text-align:right' href="https://github.com/mango-pi-x">GitHub</a></h3>
+</footer>
+</div>
 </body>
-   <script>
+<script>
     let y = document.cookie
-    
-        window.onload = function() {
-            if (y =='deny') {
-                window.location.replace("/unwanted");
-            }
-        }
-        
-        const image = document.getElementById("image");
-        
-        image.addEventListener("click", firstClick);
-        function firstClick() {
-            alert('DO NOT POKE ME');
-            image.removeEventListener("click", firstClick);
-            image.addEventListener("click", secondClick);
-        }
-        function secondClick() {
-            alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK HERE!');
-            // Blacklist the user by setting a cookie
-            document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
-            let y = document.cookie
-            window.location.replace("/unwanted");
-        }
-    </script>
+window.onload = function() {
+if (y =='deny') {
+window.location.replace("/unwanted");
+}
+}
+const image = document.getElementById("image");
+image.addEventListener("click", firstClick);
+function firstClick() {
+alert('DO NOT POKE ME');
+image.removeEventListener("click", firstClick);
+image.addEventListener("click", secondClick);
+}
+function secondClick() {
+alert('ALRIGHT, THAT IS IT YOU ARE NOT COMING BACK HERE!');
+// Blacklist the user by setting a cookie
+document.cookie = "deny; expires=Thu, 18 Dec 2032 12:00:00 UTC";
+let y = document.cookie
+window.location.replace("/unwanted");
+}
+</script>
 </html>
