@@ -1,3 +1,17 @@
+.rodrigo {
+    cursor:url('/cursors/blackpaw.png'), auto;
+    background:rgb(239, 144, 248);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white; 
+}
+
 body {
     cursor:url('/cursors/blackpaw.png'), auto;
     background:#f5ff6b;
@@ -9,11 +23,18 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: black; 
-}
-
-.container {
     
+}
+.rodrigo1 {
+    background-image: linear-gradient(rgb(251, 121, 255),rgb(0, 0, 0));
+    text-align: center;
+    max-width: 8000px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white; 
+}
+.container { 
     animation: fade 30s infinite;
     text-align: center;
     max-width: 8000px;
@@ -27,22 +48,22 @@ h1 {
     font-size: 60px;
     font-family: 'Lobster', cursive;
     margin: 20px 0;
-    color: black; }
+     }
 p {
     font-size: 30px;
     margin: 20px 0;
-    color: black; }
+     }
 h3 {
     font-size: 20px;
     transition: font-size 0.3s ease;
-    color: black; }
+     }
 a:hover {
 transition: font-size 0.3s ease;
     font-size: 35px;
 }
 a {
+    color: inherit;
     cursor: url('/cursors/thumb.png'), auto;
-    color: black;
     text-decoration: none;
     transition: color 0.3s ease;
 }
