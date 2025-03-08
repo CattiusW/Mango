@@ -10,10 +10,10 @@
 <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/rDV3sQGK/splash.png">
 </head>
 <body>
-<div class="container">
-<h1>MangoPi</h1>
+<div class="container"id='swatch'>
+<h1 id='olivia'>MangoPi</h1>
 <img id="image" src="https://i.postimg.cc/PNV2ySTG/cat.gif" alt="Cat Gif Image.">
-<h3>Stuff:<br><a onclick='prompt("copy and paste the password:", "supersecretpassword");'style='text-align:left' href="https://code.mangopi.xyz">Code </a><a style='text-align:right' href="eero">Eero</a><a style='text-align:right' href="https://whatscat.mangopi.xyz"> Chat</a></h3>
+<h3>Stuff:<br><a onclick='prompt("copy and paste the password:", "supersecretpassword");'style='text-align:left' href="https://code.mangopi.xyz">Code </a><a style='text-align:right' href="eero">Eero</a><a style='text-align:right' href="https://clock.mangopi.xyz"> Clock</a></h3>
 
 <footer>
 <h3>Links:<br><a style='text-align:left' href="mailto:admin@mangopi.xyz">Email </a><a style='text-align:right' href="https://github.com/mango-pi-x">GitHub</a></h3>
@@ -21,12 +21,25 @@
 </div>
 </body>
 <script>
-    let y = document.cookie
+let y = document.cookie
 window.onload = function() {
 if (y =='deny') {
 window.location.replace("/unwanted");
 }
 }
+
+function toggle() {
+   
+  var element1 = document.getElementById("swatch");
+  var element = document.body;
+  element.classList.toggle("rodrigo");
+  element1.classList.toggle("container");
+  element1.classList.toggle("rodrigo1");
+  
+  
+}
+const clickable = document.getElementById("olivia");
+clickable.addEventListener("click", toggle);
 const image = document.getElementById("image");
 image.addEventListener("click", firstClick);
 function firstClick() {
